@@ -215,11 +215,20 @@ jobs:
           # Remove the "#" sign from the beginning of the line below to activate:
           #curl https://github.com/loopnlearn/Loop/commit/d206432b024279ef710df462b20bd464cd9682d4.patch | git apply --directory=Loop -v --whitespace=fix
 
+          #Loop: charlottekberg-patch-1 : Endring av karbotider
+          curl https://github.com/charlottekberg/Loop/commit/6874e5b41c597c12649927963987bfec1dbe14fb.patch | git apply -v --directory=Loop -v --whitespace=fix
+
+          #Loop: charlottekberg-patch-2 : Endring av bs-grense for maks GBPA (162mg/dL)
+          curl https://github.com/charlottekberg/Loop/commit/556a83fe29fee821591e0fd2ea08e3e63c469790.patch | git apply -v --directory=Loop -v --whitespace=fix
+          
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
 
+          #Loopkit: charlottekberg-patch-1 : Tilpasning av Lyumjev-verdier
+          curl https://github.com/charlottekberg/Loopkit/commit/6e0d820b7e400ee5ba61f281e3bd8bc6882ae8ea.patch | git apply -v --directory=Loopkit -v --whitespace=fix
+          
           # Submodule xxxxx patches:
 
           # Add patches for customization of additional submodules by following the templates above, 
